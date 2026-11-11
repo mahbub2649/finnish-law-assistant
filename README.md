@@ -39,7 +39,9 @@ If the law it has does not answer the question, it says so.
 - **Two pipelines compared.** One-shot retrieval (RAG) against a tool-using agent, on accuracy, cost and latency
 
 <p align="center">
-  <img src="assets/screenshot.png" alt="The chat page answering a question about rental deposits" width="85%">
+  <a href="assets/demo.mp4"><img src="assets/demo.gif" alt="Demo: three questions answered or refused" width="85%"></a>
+  <br>
+  <sub>20-second demo (<a href="assets/demo.mp4">MP4</a>), recorded live: a trial-period question and a rental-deposit question answered with checked Finnish quotes and their sections, then a question about German law refused. Waiting time is shortened; the real time and cost of each answer are shown under it.</sub>
 </p>
 
 > [!WARNING]
@@ -70,11 +72,9 @@ against the gold section; I checked 7 random grades by hand and agreed with all 
 > The agent made the fewest errors and did best on the hand-written questions (80% against 64% for
 > RAG with the same checker), at twice the latency.
 
-<table>
-<tr>
-<td width="55%" valign="top">
+### Retrieval: is the gold section found?
 
-**Retrieval: is the gold section found?** (test half, 73 questions)
+<sub>Test half, 73 questions.</sub>
 
 | Search mode | Recall@1 | Recall@5 | Recall@10 | MRR |
 |---|---|---|---|---|
@@ -87,10 +87,7 @@ against the gold section; I checked 7 random grades by hand and agreed with all 
 
 On the 25 hand-written questions the same ranking holds (MRR 0.64 best), but embeddings alone fall to MRR 0.44: generated questions borrow the section's wording, which flatters semantic search.
 
-</td>
-<td width="45%" valign="top">
-
-**What went wrong, and what I learned**
+### What went wrong, and what I learned
 
 - **The API served stale law.** Its version listing stopped years early for 8 of 10 statutes; the Aliens Act stopped at 2015, 69 amendments behind. The downloader now picks the version named after the newest amendment in force.
 - **Finnish inflection beats stemmers.** "irtisanomisaika" and "irtisanomisajat" (notice period) stem differently; character 5-grams fixed it (recall@1 0.44 to 0.53, chosen on the dev half).
@@ -99,9 +96,6 @@ On the 25 hand-written questions the same ranking holds (MRR 0.64 best), but emb
 - **Summaries can sneak in rules.** One summary added an inspection duty the law doesn't state, and the summary check missed it.
 - **Legal terms are hard.** "arkilauantai" (an ordinary Saturday) came out as "non-working Saturday".
 
-</td>
-</tr>
-</table>
 
 <p align="center"><img src="assets/divider.png" alt="" width="80%"></p>
 
