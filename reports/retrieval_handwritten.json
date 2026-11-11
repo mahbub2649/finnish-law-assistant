@@ -1,0 +1,107 @@
+{
+ "bm25_en": {
+  "n": 25,
+  "recall@1": 0.0,
+  "recall@5": 0.0,
+  "recall@10": 0.0,
+  "mrr": 0.0,
+  "misses": [
+   "hand-01",
+   "hand-02",
+   "hand-03",
+   "hand-04",
+   "hand-05",
+   "hand-06",
+   "hand-07",
+   "hand-08",
+   "hand-09",
+   "hand-10",
+   "hand-11",
+   "hand-12",
+   "hand-13",
+   "hand-14",
+   "hand-15",
+   "hand-16",
+   "hand-17",
+   "hand-18",
+   "hand-19",
+   "hand-20",
+   "hand-21",
+   "hand-22",
+   "hand-23",
+   "hand-24",
+   "hand-25"
+  ]
+ },
+ "bm25_fi": {
+  "n": 25,
+  "recall@1": 0.36,
+  "recall@5": 0.6,
+  "recall@10": 0.72,
+  "mrr": 0.473,
+  "misses": [
+   "hand-02",
+   "hand-03",
+   "hand-08",
+   "hand-14",
+   "hand-15",
+   "hand-19",
+   "hand-24"
+  ]
+ },
+ "bm25_fi_ngram": {
+  "n": 25,
+  "recall@1": 0.44,
+  "recall@5": 0.8,
+  "recall@10": 0.88,
+  "mrr": 0.622,
+  "misses": [
+   "hand-02",
+   "hand-03",
+   "hand-24"
+  ]
+ },
+ "dense": {
+  "n": 25,
+  "recall@1": 0.24,
+  "recall@5": 0.68,
+  "recall@10": 0.8,
+  "mrr": 0.439,
+  "misses": [
+   "hand-03",
+   "hand-09",
+   "hand-16",
+   "hand-22",
+   "hand-23"
+  ]
+ },
+ "hybrid": {
+  "n": 25,
+  "recall@1": 0.28,
+  "recall@5": 0.72,
+  "recall@10": 0.76,
+  "mrr": 0.486,
+  "misses": [
+   "hand-02",
+   "hand-03",
+   "hand-14",
+   "hand-16",
+   "hand-23",
+   "hand-24"
+  ]
+ },
+ "hybrid_ngram": {
+  "n": 25,
+  "recall@1": 0.48,
+  "recall@5": 0.8,
+  "recall@10": 0.8,
+  "mrr": 0.637,
+  "misses": [
+   "hand-02",
+   "hand-03",
+   "hand-16",
+   "hand-23",
+   "hand-24"
+  ]
+ }
+}

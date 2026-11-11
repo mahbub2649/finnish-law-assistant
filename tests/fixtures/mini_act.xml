@@ -1,0 +1,23 @@
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" xmlns:finlex="http://data.finlex.fi/schema/finlex">
+  <act name="main">
+    <meta><proprietary><finlex:amendedBy>
+      <finlex:statuteReference><finlex:ref href="/akn/fi/act/statute/2020/10">10/2020</finlex:ref>
+        <finlex:inForce><finlex:dateEntryIntoForce date="2020-01-01">1.1.2020</finlex:dateEntryIntoForce></finlex:inForce></finlex:statuteReference>
+      <finlex:statuteReference><finlex:ref href="/akn/fi/act/statute/2030/5">5/2030</finlex:ref>
+        <finlex:inForce><finlex:dateEntryIntoForce date="2030-01-01">1.1.2030</finlex:dateEntryIntoForce></finlex:inForce></finlex:statuteReference>
+    </finlex:amendedBy></proprietary></meta>
+    <preface><docTitle>Testilaki</docTitle></preface>
+    <body>
+      <chapter eId="chp_1"><num>1 luku</num><heading>Yleiset säännökset</heading>
+        <section eId="chp_1__sec_1v20200010" finlex:originalVersion="@20200010"><num>1 §</num><heading>Koeaika</heading>
+          <subsection eId="s1"><content><p>Koeaika voi olla enintään kuusi kuukautta.</p></content></subsection>
+          <subsection eId="s2"><content><p>Koeaikaa voidaan pidentää sairauden vuoksi.</p></content></subsection>
+        </section>
+        <section eId="chp_1__sec_1v20300005" finlex:originalVersion="@20300005"><num>1 §</num><heading>Koeaika</heading>
+          <subsection eId="s1b"><content><p>Koeaika voi olla enintään neljä kuukautta.</p></content></subsection>
+        </section>
+        <section eId="chp_1__sec_2"><num>2 §</num><content><p>2 § on kumottu L:lla 1.1.2019/1.</p></content></section>
+      </chapter>
+    </body>
+  </act>
+</akomaNtoso>
